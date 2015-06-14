@@ -6,7 +6,7 @@
 /*   By: rmaury <rmaury@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/30 17:12:24 by rmaury            #+#    #+#             */
-/*   Updated: 2015/06/14 14:24:54 by rmaury           ###   ########.fr       */
+/*   Updated: 2015/06/14 17:28:59 by rmaury           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	term_init(void)
 {
 	char			*name;
 	struct termios	term;
-	int		fd;
-	fd = open("/dev/ttys001", O_WRONLY);
 
 	if ((name = getenv("TERM")) == NULL || ft_strcmp(name, "") == 0)
 	{
